@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Тестовое задание для US Web Studio</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Задание №1 -->
+        <h1>
+            Тестовое задание для <span class="purple">R&B Afla Group</span>
+        </h1>
+        <hr>
+        <h2>Задание №1:
+            <span class="purple">Верстка окна лицензий</span>
+        </h2>
+
+        <ul>
+            <li>
+                <h3>Сверстать приведенный ниже дизайн</h3>
+                <div class="example">
+                    <img src="test.png" alt="design">
+                </div>
+            </li>
+            <li>
+                <h3>Тип лицензии выводить шрифтом <span id="bebas">Bebas</span> - выводить через font-face</h3>
+            </li>
+            <li>
+                <h3>Отображать тип выбранной лицензии и итоговую сумму</h3>
+            </li>
+            <li>
+                <h3>Формат ссылки в кнопке Buy Now сформируйте по вашему усмотрению</h3>
+            </li>
+        </ul>
+
+
+        <hr>
+
+
+        <!-- Ответ №1 -->
+        <div class="answer">
+            <div class="card-lecense">
+                <form onchange="getRadioGroupValue()">
+                    <div class="item">
+                        <label for="1"> <input type="radio" id="1" name="type" data-name="License plan#1" value="13" checked>
+                            <span class="license-name">License plan#1</span> 
+                            <span class="price">$13 per license</span> 
+                        </label>
+                    </div>
+
+                    <div class="item">
+                        <label for="2"> <input type="radio" id="2" name="type" data-name="License plan#2" value="22">
+                            <span class="license-name"> License plan#2</span>
+                            <span class="price">$22 per license</span>
+                        </label>
+
+                    </div>
+                    <div class="item">
+                        <label for="3"> <input type="radio" id="3" name="type" data-name="License plan#3" value="34">
+                            <span class="license-name"> License plan#3</span>
+                            <span class="price">$34 per license</span>
+                        </label>
+
+                    </div>
+
+                    <hr>
+
+                    <div class="select">
+                        <span>Number of license:</span>
+                        <select name="numOfLicense" id="count">
+                        <option value="1">1</option>
+                        <option value="5">5</option>
+                        <option value="10">10</option>
+                        <option value="20">20</option>
+                    </select>
+                    </div>
+
+                    <hr>
+
+                    <div class="total">
+                        <p>TOTAL:
+                            <span id="result">
+                            </span>
+                        </p>
+                        <button type="submit">BUY NOW</button>
+                        <div id="selected"></div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+
+
+
+        <script src="script.js"></script>
+</body>
+
+</html>
